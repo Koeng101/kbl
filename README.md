@@ -13,4 +13,21 @@ For example, within a short file, a scientist should be able to define the Golde
 
 Rather than a top-down approach to building this language where I try to think of every application it may be used in, I am taking a bottom-up approach, where I build the language according to my needs. As I build a toolkit for each new organism, I will incorporate features I need into KBL and into it's background library, Poly. Because it is specifically designed to fulfill my real needs, it is named "Keoni's Biology Language" rather than something more generic. 
 
-Keoni
+### What does it look like?
+[prototyping version right now]
+```
+---
+SELECT: 
+  - "MGHHHHHHENLYFQGSGSNIKKNQVMNLGPNSKLLKEYKSQLIELNIEQFEAGIGLILGNAYIRSRDEGKTYCMQFEWKNKAYMDHVCLLYDQWVLSPPHKKERVNHLGNLVITWGAQTFKHQAFNKLANLFIVNNKKTIPNNLVENYLTPMSLAYWFMDAGGKWDYNKNSTNKSIVLNTQSFTFEEVEYLVKGLRNKFQLNCYVKINKNKPIIYIDSMSYLIFYNLIKPYLIPQMMYKLPQFVIPNRGVTKQLVKQLVKSELEEKKSELRHKLKYVPHEYIELIEIARNSTQDRILEMKVMEFFMKVYGYRGKHLGGSRKPDGAIYTVGSPIDYGVIVDTKAYSGGYNLPIGQADEMQRYVEENQTRNKHINPNEWWKVYPSSVTEFKFLFVSGHFKGNYKAQLTRLNHITNCNGAVLSVEELLIGGEMIKAGTLTLEEVRRKFNN*"
+OPTIMIZE: "Escherichia coli"
+SYNTHESIS_FIX:
+  - "TypeIIS"
+```
+
+In brief, the language works in a similar way to table-based languages. You first select a set of genes (which right now are just a list of amino acid sequences), then do different operations on those genes, such as codon optimizing them and fixing them up for synthesis. 
+
+In the future, you should be able to do more complicated SELECT commands, for example, by selecting a specific biological compound instead of a DNA sequence. You should also be able to do more complex simulations - for example, simulating cloning into several different vectors for mutli-gene assembly and sorting for resultant expression levels. 
+
+### Roadmap to v0.0.1
+- Add in sane defaults for optimization
+- Better error checking
